@@ -6,7 +6,7 @@ Install with [npm](https://www.npmjs.com/):
 $ npm install --save react-useinterval
 ```
 
-## Usage
+## Example Usage
 
 ```js
 import React, { useState, useEffect, useRef } from 'react';
