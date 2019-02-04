@@ -1,0 +1,18 @@
+{
+	"name": "react-useinterval",
+	"version": "0.1.0",
+	"description": "A React hook that wraps setInterval",
+	"license": "MIT",
+	"author": "John DiIorio <johnzdiiorio@gmail.com>",
+	"repository": "johndiiorio/react-useinterval",
+	"main": "index.js",
+	"keywords": [
+	  "react",
+	  "react hooks",
+	  "useinterval",
+	  "setinterval"
+	],
+	"peerDependencies": {
+		"react": "^16.7.0-alpha.1"
+	}
+  }
