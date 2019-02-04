@@ -1,6 +1,11 @@
+[![npm version](https://img.shields.io/npm/v/react-useinterval.svg?style=flat)](https://www.npmjs.com/package/react-useinterval) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/johndiiorio/react-useinterval/blob/master/LICENSE)
+
+# react-useInterval
+A custom React hook that wraps JavaScript's setInterval function.
+
 ## Install
 
-Install with [npm](https://www.npmjs.com/):
+Install with [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/)):
 
 ```sh
 $ npm install --save react-useinterval
@@ -9,7 +14,7 @@ $ npm install --save react-useinterval
 ## Example Usage
 
 ```js
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import useInterval from 'react-useinterval';
 
 function Counter() {
