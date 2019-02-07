@@ -1,13 +1,16 @@
 {
 	"name": "react-useinterval",
-	"version": "0.1.0",
-	"description": "A React hook that wraps setInterval",
+	"version": "1.0.0",
+	"description": "A custom React hook that wraps setInterval",
 	"license": "MIT",
 	"author": "John DiIorio <johnzdiiorio@gmail.com>",
-	"repository": "johndiiorio/react-useinterval",
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/johndiiorio/react-useinterval"
+	},
 	"main": "./dist/index.js",
 	"scripts": {
-		"build": "webpack"
+		"build": "rollup -c"
 	},
 	"keywords": [
 		"react",
@@ -16,18 +19,17 @@
 		"setinterval"
 	],
 	"peerDependencies": {
-		"react": ">=16.8.0-alpha.1"
+		"react": ">= 16.8.0 < 17"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.2.2",
 		"@babel/preset-env": "^7.3.1",
 		"@babel/preset-react": "^7.0.0",
-		"babel-loader": "^8.0.5",
-		"path": "^0.12.7",
-		"react": ">=16.8.0-alpha.1",
-		"react-dom": ">=16.8.0-alpha.1",
-		"terser": "^3.14.1",
-		"webpack": "^4.29.0",
-		"webpack-cli": "^3.2.1"
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0",
+		"rollup": "^1.1.2",
+		"rollup-plugin-babel": "^4.3.2",
+		"rollup-plugin-node-resolve": "^4.0.0",
+		"rollup-plugin-terser": "^4.0.3"
 	}
 }
