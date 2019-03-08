@@ -11,7 +11,19 @@ Install with [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/)):
 $ npm install --save react-useinterval
 ```
 
+## API
+
+**useInterval(callback, delay, ...args)**
+
+| Property | Type | Required | Description |
+|----------|------| -------- |-------------|
+*callback* | `Function` | Yes | A function to be executed every *delay* milliseconds.
+*delay*    | `Number`, `undefined`, or `null` | No | The time, in milliseconds, that the timer should delay in between executions of the specified function or code. Note: If `undefined` or `null` is passed, the interval will be paused. |
+| *...args* | `Any` | No | Additional arguments which are passed through to the function specified by *callback*. |
+
 ## Example Usage
+
+This creates a counter that counts up by five every second.
 
 ```js
 import React, { useState } from 'react';
@@ -20,9 +32,11 @@ import useInterval from 'react-useinterval';
 function Counter() {
   let [count, setCount] = useState(0);
 
-  useInterval(() => {
-    setCount(count + 1);
-  }, 1000);
+  const increaseCount = (amount = 1) => {
+    setCount(count + amount);
+  };
+
+  useInterval(increaseCount, 1000, 5);
   return <h1>{count}</h1>;
 }
 ```

@@ -1,6 +1,6 @@
 {
 	"name": "react-useinterval",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A custom React hook that wraps setInterval",
 	"license": "MIT",
 	"author": "John DiIorio <johnzdiiorio@gmail.com>",
