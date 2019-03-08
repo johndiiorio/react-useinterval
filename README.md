@@ -18,7 +18,7 @@ $ npm install --save react-useinterval
 | Property | Type | Required | Description |
 |----------|------| -------- |-------------|
 *callback* | `Function` | Yes | A function to be executed every *delay* milliseconds.
-*delay*    | `Number`, `undefined`, or `null` | No | The time, in milliseconds, that the timer should delay in between executions of the specified function or code. Note: If `undefined` or `null` is passed, the interval will be paused. |
+*delay*    | `Number`, `undefined`, or `null` | No | The time, in milliseconds, that the timer should delay in between executions of the specified function. Note: If `undefined` or `null` is passed, the interval will be paused. |
 | *...args* | `Any` | No | Additional arguments which are passed through to the function specified by *callback*. |
 
 ## Example Usage
