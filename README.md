@@ -32,7 +32,7 @@ import useInterval from 'react-useinterval';
 function Counter() {
   let [count, setCount] = useState(0);
 
-  const increaseCount = (amount = 1) => {
+  const increaseCount = amount => {
     setCount(count + amount);
   };
 

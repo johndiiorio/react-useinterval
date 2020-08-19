@@ -1,19 +1,16 @@
-import resolve from 'rollup-plugin-node-resolve';
-import babel from 'rollup-plugin-babel';
-import { terser } from "rollup-plugin-terser";
+import typescript from '@rollup/plugin-typescript';
+import { terser } from 'rollup-plugin-terser';
 
 export default {
-	input: 'src/useInterval.jsx',
+	input: 'src/index.tsx',
 	output: {
-		file: 'dist/index.js',
-		format: 'cjs'
+		dir: './dist',
+		format: 'cjs',
+		exports: 'auto',
 	},
 	plugins: [
-    	resolve(),
-    	babel({
-      		exclude: 'node_modules/**'
-		}),
+		typescript(),
 		terser(),
 	],
-	external: ['react']
+	external: ['react'],
 };
